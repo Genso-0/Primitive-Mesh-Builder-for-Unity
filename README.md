@@ -9,6 +9,16 @@ Universal Render Pipeline
 ### Language
 C#
 
+<!-- GETTING STARTED -->
+## Getting Started
+1) Download project files.
+2) Open example scene.
+3) Check each primitive in the inspector for a script that sais something like "Shape_Cube".
+4) Play around with the settings and check out the code for ideas on how to use it for yourself!
+<!-- LICENSE -->
+
+## License
+
 Distributed under the MIT License. See [LICENSE](https://github.com/Genso-0/Primitive-Mesh-Builder-for-Unity/blob/master/LICENSE) for more information.
 
 <!-- CONTACT -->
