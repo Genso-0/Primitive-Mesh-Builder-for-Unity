@@ -34,15 +34,15 @@ namespace Primitive_Mesh_Builder
             var axisA = new Vector3(localUp.y, localUp.z, localUp.x);
             var axisB = Vector3.Cross(localUp, axisA);
             var vertCount = verts.Count;
-            var offset = scale * localUp * .5f;
+            var offset =  localUp * .5f;
             for (int y = 0; y < resolution; y++)
             {
                 for (int x = 0; x < resolution; x++)
                 {
                     Vector2 percent = new Vector2(x, y) / (resolution - 1);
-                    Vector3 point = scale * ((percent.x - .5f) * axisA + (percent.y - .5f) * axisB);
+                    Vector3 point =  ((percent.x - .5f) * axisA + (percent.y - .5f) * axisB);
                     point = offset + point;
-                    point = point.normalized * scale * .5f;
+                    point = point.normalized * scale;
                     uv[verts.Count] = quadUV ? new Vector2(x, y) : new Vector2(percent.x, percent.y);
                     verts.Add(point);
 
